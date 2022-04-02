@@ -1,0 +1,10 @@
+.Card {
+    transition: transform 0.2s;
+  }
+  .Card:hover {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(0.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    /* background-color: rgb(45, 184, 11); */
+  }
+  

@@ -1,0 +1,66 @@
+.header {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ffffff),
+      to(#ffffff)
+    ) repeat scroll 0 0;
+
+  justify-content: space-between;
+  padding: 100;
+}
+
+.Welcome {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+#wheel_first {
+  animation: firstwheel 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes firstwheel {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+#wheel_last {
+  animation: firstwheel 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes firstwheel {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+#hand {
+  animation: hands 1s ease infinite;
+}
+
+@keyframes hands {
+  from {
+    transform: rotateX(5deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+
